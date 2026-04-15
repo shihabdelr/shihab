@@ -10,13 +10,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 20px;
+    padding: 40px 20px;
     box-sizing: border-box;
 }
 
 .content {
     text-align: center;
-    max-width: 760px;
+    max-width: 900px;
     width: 100%;
 }
 
@@ -37,15 +37,28 @@ h1 {
 .role {
     font-size: 21px;
     color: #555;
-    margin-bottom: 36px;
+    margin-bottom: 16px;
+}
+
+.about {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4a4f5a;
+}
+
+.project,
+.demo-script {
+    background: white;
+    padding: 34px;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
+    border: 1px solid #e8ecf5;
 }
 
 .project {
-    background: white;
-    padding: 36px;
-    border-radius: 16px;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
-    border: 1px solid #e8ecf5;
+    margin-bottom: 24px;
 }
 
 .featured-label {
@@ -61,7 +74,8 @@ h1 {
     margin-bottom: 16px;
 }
 
-.project h2 {
+.project h2,
+.demo-script h3 {
     margin: 0 0 14px;
     font-size: 34px;
 }
@@ -70,8 +84,40 @@ h1 {
     color: #555;
     font-size: 18px;
     line-height: 1.7;
-    margin: 0 auto;
-    max-width: 640px;
+    margin: 0 auto 26px;
+    max-width: 700px;
+}
+
+.demo-checklist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.demo-item {
+    background: #f8fbff;
+    border: 1px solid #dbe6fb;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.demo-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2353e5;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.demo-item p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 15px;
 }
 
 .buttons {
@@ -117,6 +163,28 @@ h1 {
     background-color: #e6edf9;
 }
 
+.demo-script {
+    text-align: left;
+}
+
+.demo-script ol {
+    margin: 0;
+    padding-left: 22px;
+    color: #374151;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.demo-script li + li {
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .demo-checklist {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 640px) {
     h1 {
         font-size: 40px;
@@ -126,11 +194,17 @@ h1 {
         font-size: 18px;
     }
 
-    .project {
-        padding: 26px 20px;
+    .about {
+        font-size: 16px;
     }
 
-    .project h2 {
+    .project,
+    .demo-script {
+        padding: 24px 18px;
+    }
+
+    .project h2,
+    .demo-script h3 {
         font-size: 28px;
     }
 
@@ -146,5 +220,6 @@ h1 {
     .buttons a {
         width: 100%;
         box-sizing: border-box;
+        text-align: center;
     }
 }
