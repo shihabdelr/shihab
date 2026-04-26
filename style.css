@@ -223,3 +223,39 @@ h1 {
         text-align: center;
     }
 }
+
+
+.team-project {
+    margin-top: 24px;
+}
+
+.phase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.phase-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phase-buttons {
+    justify-content: flex-start;
+    margin-top: 22px;
+}
+
+.phase-buttons .primary,
+.phase-buttons .secondary {
+    font-size: 15px;
+    padding: 13px 18px;
+}
+
+@media (max-width: 800px) {
+    .phase-grid {
+        grid-template-columns: 1fr;
+    }
+}
