@@ -1,50 +1,115 @@
-<section class="project">
-    <div class="featured-label">Team Project</div>
+<!DOCTYPE html>
+<html lang="en">
 
-    <h2>Battleship Game</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shihab Abdelrahim | Software Engineer</title>
+    <link rel="stylesheet" href="style.css?v=4" />
+</head>
 
-    <p class="description">
-        A full-stack Battleship game built in two phases. Phase 1 focuses on the backend game logic and API design, while Phase 2 builds a responsive frontend that interacts with the live server.
-    </p>
+<body>
+    <div class="container">
+        <div class="content">
+            <p class="eyebrow">Portfolio</p>
 
-    <div class="demo-checklist">
+            <h1>Shihab Abdelrahim</h1>
 
-        <!-- Phase 1 -->
-        <div class="demo-item">
-            <span class="demo-title">Phase 1 — Game Logic</span>
-            <p>
-                Developed the backend logic for the Battleship game, including game state management,
-                turn-based mechanics, ship placement, and API endpoints for gameplay actions.
+            <div class="role">
+                Software Engineer | Full-Stack Web Applications
+            </div>
+
+            <p class="about">
+                I'm a senior at Clemson University studying computer science and economics and expected to graduate in May 2026.
+                Following my graduation, I will be working as a Software Engineer.
             </p>
 
-            <div class="buttons">
-                <a class="secondary" href="https://github.com/MasonPrice813/CPSC3720FinalProject" target="_blank">
-                    View GitHub
-                </a>
-            </div>
+            <!-- Featured Project -->
+            <section class="project">
+                <div class="featured-label">Featured Project</div>
+
+                <h2>Cloud Collection Manager</h2>
+
+                <p class="description">
+                    A full-stack web application that lets users browse, add, edit, and organize records through a responsive interface.
+                    The frontend focuses on a clean user experience, while the backend API handles persistence and data delivery.
+                </p>
+
+                <div class="demo-checklist">
+                    <div class="demo-item">
+                        <span class="demo-title">Live Demo Feature</span>
+                        <p>Show pagination or record editing in the live app to prove the deployed backend is working.</p>
+                    </div>
+                    <div class="demo-item">
+                        <span class="demo-title">Architecture Decision</span>
+                        <p>I used a Flask API with server-side pagination and JSON persistence so the app stays responsive while keeping the data layer separate from the frontend.</p>
+                    </div>
+                    <div class="demo-item">
+                        <span class="demo-title">Code Access</span>
+                        <p>The GitHub repo is linked directly below so you can move from portfolio to code in one click during the 60-second demo.</p>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a class="primary" href="https://solo-project-2-7rmr.onrender.com/" target="_blank">Launch Live Demo</a>
+                    <a class="secondary" href="https://github.com/shihabdelr/Solo_Project_2" target="_blank">View GitHub</a>
+                </div>
+            </section>
+
+            <!-- Battleship Team Project -->
+            <section class="project">
+                <div class="featured-label">Team Project</div>
+
+                <h2>Battleship Game</h2>
+
+                <p class="description">
+                    A full-stack Battleship game built in two phases. Phase 1 focuses on backend game logic and API design, while Phase 2 implements a responsive frontend connected to the live server.
+                </p>
+
+                <div class="demo-checklist">
+
+                    <!-- Phase 1 -->
+                    <div class="demo-item">
+                        <span class="demo-title">Phase 1 — Game Logic</span>
+                        <p>
+                            Developed the backend logic for the Battleship game, including game state management,
+                            turn-based mechanics, ship placement, and API endpoints for gameplay actions.
+                        </p>
+
+                        <div class="buttons">
+                            <a class="secondary" href="https://github.com/MasonPrice813/CPSC3720FinalProject" target="_blank">
+                                View GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="demo-item">
+                        <span class="demo-title">Phase 2 — Frontend</span>
+                        <p>
+                            Built the interactive frontend interface, connecting to the backend API to allow users
+                            to play the game in real time with a clean and responsive UI.
+                        </p>
+
+                        <div class="buttons">
+                            <a class="secondary" href="https://github.com/MasonPrice813/CPSC3750Phase2" target="_blank">
+                                View GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Live Demo Button BELOW both phases -->
+                <div class="buttons" style="margin-top: 30px;">
+                    <a class="primary" href="https://cpsc3750phase2.onrender.com/index.html" target="_blank">
+                        View Live Demo
+                    </a>
+                </div>
+            </section>
+
         </div>
-
-        <!-- Phase 2 -->
-        <div class="demo-item">
-            <span class="demo-title">Phase 2 — Frontend</span>
-            <p>
-                Built the interactive frontend interface, connecting to the backend API to allow users
-                to play the game in real time with a clean and responsive UI.
-            </p>
-
-            <div class="buttons">
-                <a class="secondary" href="https://github.com/MasonPrice813/CPSC3750Phase2" target="_blank">
-                    View GitHub
-                </a>
-            </div>
-        </div>
-
     </div>
+</body>
 
-    <!-- 🔥 THIS is the key change -->
-    <div class="buttons" style="margin-top: 30px;">
-        <a class="primary" href="https://cpsc3750phase2.onrender.com/index.html" target="_blank">
-            View Live Demo
-        </a>
-    </div>
-</section>
+</html>
