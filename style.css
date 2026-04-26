@@ -1,7 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, #f8f9fb 0%, #eef3ff 100%);
+    background:
+        radial-gradient(circle at top left, rgba(11, 107, 255, 0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(255, 140, 0, 0.14), transparent 35%),
+        linear-gradient(180deg, #f8f9fb 0%, #eef3ff 100%);
     color: #222;
 }
 
@@ -10,39 +13,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
 }
 
 .content {
     text-align: center;
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
 }
 
 .eyebrow {
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.18em;
     font-size: 13px;
-    font-weight: 700;
-    color: #4a6cf7;
+    font-weight: 800;
+    color: #0b6bff;
     margin-bottom: 14px;
 }
 
 h1 {
-    font-size: 52px;
+    font-size: 56px;
     margin: 0 0 10px;
+    background: linear-gradient(90deg, #0b6bff, #ff8c00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .role {
     font-size: 21px;
-    color: #555;
+    color: #444;
     margin-bottom: 16px;
+    font-weight: 600;
 }
 
 .about {
-    max-width: 700px;
-    margin: 0 auto 30px;
+    max-width: 720px;
+    margin: 0 auto 34px;
     font-size: 17px;
     line-height: 1.7;
     color: #4a4f5a;
@@ -50,64 +57,81 @@ h1 {
 
 .project,
 .demo-script {
-    background: white;
-    padding: 34px;
-    border-radius: 18px;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.10);
-    border: 1px solid #e8ecf5;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(10px);
+    padding: 36px;
+    border-radius: 22px;
+    box-shadow: 0 18px 45px rgba(11, 107, 255, 0.12);
+    border: 1px solid rgba(11, 107, 255, 0.12);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 55px rgba(11, 107, 255, 0.18);
 }
 
 .project {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .featured-label {
     display: inline-block;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    background-color: #edf3ff;
-    color: #2353e5;
-    padding: 8px 12px;
+    letter-spacing: 0.09em;
+    background: linear-gradient(90deg, #edf3ff, #fff4e5);
+    color: #0b6bff;
+    padding: 9px 14px;
     border-radius: 999px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(11, 107, 255, 0.12);
 }
 
 .project h2,
 .demo-script h3 {
     margin: 0 0 14px;
-    font-size: 34px;
+    font-size: 36px;
+    color: #172033;
 }
 
 .description {
     color: #555;
     font-size: 18px;
     line-height: 1.7;
-    margin: 0 auto 26px;
-    max-width: 700px;
+    margin: 0 auto 28px;
+    max-width: 740px;
 }
 
 .demo-checklist {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 18px;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .demo-item {
-    background: #f8fbff;
+    background:
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
     border: 1px solid #dbe6fb;
-    border-radius: 14px;
-    padding: 18px;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 22px rgba(31, 42, 68, 0.06);
+    transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.demo-item:hover {
+    transform: translateY(-3px);
+    border-color: #0b6bff;
 }
 
 .demo-title {
     display: block;
     font-size: 14px;
-    font-weight: 700;
-    color: #2353e5;
+    font-weight: 800;
+    color: #0b6bff;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 10px;
@@ -130,7 +154,7 @@ h1 {
 
 .buttons a {
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 12px;
     font-weight: bold;
     transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
 }
@@ -140,19 +164,19 @@ h1 {
 }
 
 .buttons .primary {
-    background-color: #0b6bff;
+    background: linear-gradient(90deg, #0b6bff, #2353e5);
     color: white;
     font-size: 19px;
-    padding: 16px 30px;
-    box-shadow: 0 10px 24px rgba(11, 107, 255, 0.24);
+    padding: 16px 32px;
+    box-shadow: 0 12px 28px rgba(11, 107, 255, 0.28);
 }
 
 .buttons .primary:hover {
-    background-color: #0058d6;
+    background: linear-gradient(90deg, #0058d6, #1d45c9);
 }
 
 .buttons .secondary {
-    background-color: #f1f4fa;
+    background-color: #f7f9fd;
     color: #1f2a44;
     font-size: 16px;
     padding: 14px 22px;
@@ -160,7 +184,8 @@ h1 {
 }
 
 .buttons .secondary:hover {
-    background-color: #e6edf9;
+    background-color: #eaf1ff;
+    border-color: #0b6bff;
 }
 
 .demo-script {
@@ -187,7 +212,7 @@ h1 {
 
 @media (max-width: 640px) {
     h1 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .role {
@@ -200,12 +225,12 @@ h1 {
 
     .project,
     .demo-script {
-        padding: 24px 18px;
+        padding: 26px 18px;
     }
 
     .project h2,
     .demo-script h3 {
-        font-size: 28px;
+        font-size: 29px;
     }
 
     .description {
@@ -221,41 +246,5 @@ h1 {
         width: 100%;
         box-sizing: border-box;
         text-align: center;
-    }
-}
-
-
-.team-project {
-    margin-top: 24px;
-}
-
-.phase-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    text-align: left;
-    margin-top: 10px;
-}
-
-.phase-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.phase-buttons {
-    justify-content: flex-start;
-    margin-top: 22px;
-}
-
-.phase-buttons .primary,
-.phase-buttons .secondary {
-    font-size: 15px;
-    padding: 13px 18px;
-}
-
-@media (max-width: 800px) {
-    .phase-grid {
-        grid-template-columns: 1fr;
     }
 }
